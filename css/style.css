@@ -1,0 +1,238 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#navbarSupportedContent ul li a:hover {
+  background-image: linear-gradient(to top, #ff0844 0%, #d6a1bc 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container-fluid .navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: seagreen;
+  animation: pluse 7s linear infinite;
+}
+@keyframes pluse {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: black;
+  }
+  20% {
+    color: purple;
+  }
+  30% {
+    color: brown;
+  }
+  40% {
+    color: olive;
+  }
+  50% {
+    color: orangered;
+  }
+  60% {
+    color: fuchsia;
+  }
+  70% {
+    color: teal;
+  }
+  80% {
+    color: khaki;
+  }
+  90% {
+    color: hotpink;
+  }
+  100% {
+    color: navy;
+  }
+}
+.explore {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.explore:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(to top, #ff0844 0%, #d6a1bc 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.col-3 {
+  display: flex;
+  align-content: center;
+  width: 60%;
+  position: relative;
+  left: 13rem;
+}
+.card {
+  transition: transform 0.5s;
+  cursor: pointer;
+  box-shadow: 25px 25px 30px rgb(0, 0, 0.3);
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.carousel-item {
+  display: block;
+}
+
+.tt {
+  /* position: relative;
+    top: 10rem; */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.tt:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(to top, #ff0844 0%, #d6a1bc 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.testimony {
+  display: flex;
+  justify-content: space-evenly;
+}
+.test {
+  margin-top: 20vh;
+}
+
+/* ---footer- */
+.footer-container {
+  padding: 5rem 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-item {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex start;
+  margin: 16px;
+  text-align: left;
+  width: 150px;
+  box-sizing: border-box;
+}
+.wrap a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrap a:hover {
+  font-weight: bolder;
+}
+
+/* .wrap h2{
+    margin-bottom: 18px;
+  } */
+.app {
+}
+.app p {
+  color: rgb(3, 3, 3);
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 5rem;
+  left: 29%;
+}
+.app h2 {
+  color: white;
+  font-size: 15px;
+}
+.app .z {
+  text-align: center;
+  font-size: 1.9rem;
+  text-align: center;
+}
+.app .y {
+  text-align: center;
+  font-size: small;
+}
+.card-items-container {
+  background-color: gray;
+}
+footer {
+  background-color: gray;
+}
+.card-items-container {
+  border: 2px solid black;
+}
+/* ------------responseive---- */
+@media (max-width: 760px) {
+  .container {
+    width: 286%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-3 {
+    /* display: flex; */
+    /* align-content:space-around; */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    width: 50%;
+    position: relative;
+    left: 1rem;
+  }
+  .card-body {
+    background-color: cornsilk;
+  }
+  .wrap {
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .app h5 {
+    position: relative;
+    top: 3rem;
+    font-size: medium;
+  }
+  .app .x {
+    position: relative;
+    left: -21px;
+    bottom: 7rem;
+  }
+  .app .y {
+    position: relative;
+    bottom: 6rem;
+    left: -21px;
+    font-size: 10px;
+  }
+  footer{
+      background-color: rgba(241, 210, 210, 0.39);
+  }
+}
